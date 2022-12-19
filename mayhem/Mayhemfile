@@ -1,0 +1,9 @@
+project: proj
+
+target: fuzzer
+
+image: ghcr.io/ethanm27/ping3:latest
+
+cmds:
+    - cmd: /ping3/mayhem/fuzzer.py
+      libfuzzer: true
